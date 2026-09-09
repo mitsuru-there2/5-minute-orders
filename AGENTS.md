@@ -10,8 +10,11 @@ incomplete information.
   Five minutes is a design constraint, not a mandatory prototype countdown.
 - Favor meaningful choices over micromanagement, and rule-changing abilities
   over additional numerical bonuses.
-- Start with an offline prototype: two nations, a small map, one to three
-  commanders, armies, movement, combat, defense, fog of war, and a simple AI.
+- The first release has exactly four player slots, four factions, a fixed-size
+  orthogonal square grid, and plains/forest/mountain/water terrain effects.
+  Exact dimensions, faction traits, and terrain rules remain proposals in SPEC 003.
+  Keep one to three commanders, armies, movement, combat, defense, fog of war,
+  and local AI. Two-nation maps may remain as focused rule-test fixtures.
 - The first release must run entirely on the device. Use an embedded local DB
   for persistence, with no external server, separate DB process, cloud DB,
   account, or network connection required to play or resume a game.
