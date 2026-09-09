@@ -1,0 +1,18 @@
+config_version=5
+
+[application]
+config/name="5分戦記 / 5 MINUTE ORDERS"
+run/main_scene="res://scenes/main.tscn"
+config/features=PackedStringArray("4.6", "GL Compatibility")
+config/version="0.0.1"
+
+[display]
+window/size/viewport_width=390
+window/size/viewport_height=844
+window/stretch/mode="canvas_items"
+window/handheld/orientation=1
+
+[rendering]
+renderer/rendering_method="gl_compatibility"
+renderer/rendering_method.mobile="gl_compatibility"
+environment/defaults/default_clear_color=Color(0.055, 0.067, 0.082, 1)

@@ -1,0 +1,16 @@
+name: Godot checks
+on:
+  push:
+  pull_request:
+permissions:
+  contents: read
+jobs:
+  check:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+      - name: Install pinned Godot with checksum verification
+        run: ./scripts/setup.sh
+      - name: Import, test and boot
+        run: ./scripts/check.sh

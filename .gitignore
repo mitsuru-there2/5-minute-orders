@@ -1,0 +1,13 @@
+# Godot cache; keep .uid and .import sidecars
+.tools/
+.godot/
+build/
+.DS_Store
+.env
+.env.*
+!.env.example
+*.keystore
+*.jks
+*.p12
+*.mobileprovision
+export_credentials.cfg
