@@ -39,7 +39,7 @@ Windowsは公式アーカイブから4.6.3 Standardを導入し `game/project.go
 - [開発環境](docs/DEVELOPMENT.md)
 - [依存とコマンド管理](docs/DEPENDENCIES.md)
 - [現状とロードマップ](docs/ROADMAP.md)
-- [販促戦略（SNS・SEO・X運用）](docs/MARKETING.md)
+- [販促戦略（SNS・SEO・X・Threads運用）](docs/MARKETING.md)
 - [技術選定](docs/decisions/0001-stack.md)
 - [基盤SPEC](docs/specs/000-foundation.md)
 - [プロトタイプSPEC](docs/specs/001-prototype.md)
