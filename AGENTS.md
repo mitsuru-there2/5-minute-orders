@@ -22,11 +22,15 @@ incomplete information.
   may have six. Recruiting above the cap requires dismissing an existing commander.
   Keep armies, movement, combat, defense, fog of war,
   and local AI. Two-nation maps may remain as focused rule-test fixtures.
-- Neutral-army defeat recruitment is the leading proposal replacing fixed condition
-  events; details remain unaccepted. Rare recruitment events are rolled randomly
+- Defeating neutral armies recruits the commander only, without accompanying troops.
+  Neutral-army behavior, placement, and zero-strength commander rules remain undecided.
+  Rare recruitment events are rolled randomly
   each turn, without achievement-based triggers. Do not guarantee fixed-turn recruitment.
   Preserve seeded determinism. Probabilities, dismissal consequences, faction assignment,
   neutral-army rules, and commander abilities remain proposals in SPEC 004.
+- Commanders can issue a territory-development order. Territories develop by up to
+  three stages, with terrain-dependent increases in per-turn resource income or combat
+  modifiers. Exact levels, resource types, costs, and effects remain proposals in SPEC 005.
 - The first release must run entirely on the device. Use an embedded local DB
   for persistence, with no external server, separate DB process, cloud DB,
   account, or network connection required to play or resume a game.
