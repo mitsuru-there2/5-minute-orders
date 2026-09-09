@@ -14,8 +14,10 @@ incomplete information.
   orthogonal square grid, and plains/forest/mountain/water terrain effects.
   Water gameplay focuses on river crossings; no navy or naval combat in the first release.
   Losing a capital eliminates that nation only, not automatically ending the match.
-  Faction traits, detailed terrain/elimination rules, and match victory remain proposals
-  in SPEC 003.
+  Remove eliminated nations' commanders and armies, neutralize their remaining land,
+  and preserve land already occupied by surviving nations. One survivor wins;
+  simultaneous elimination of all remaining nations is a draw. See SPEC 003 for ordering.
+  Faction traits, detailed terrain rules, and turn-limit adjudication remain proposals.
   Keep one to three commanders, armies, movement, combat, defense, fog of war,
   and local AI. Two-nation maps may remain as focused rule-test fixtures.
 - The first release must run entirely on the device. Use an embedded local DB
