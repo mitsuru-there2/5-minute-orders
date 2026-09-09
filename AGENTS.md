@@ -30,8 +30,10 @@ incomplete information.
   neutral-army rules, and commander abilities remain proposals in SPEC 004.
 - Commanders can issue a territory-development order. Territories develop by up to
   three stages. Terrain/development effects have three axes: funds, resources, and defense
-  modifiers. Resource naming, per-terrain values, exact levels, costs, and uses remain
-  proposals in SPEC 005. Do not collapse funds and resources into one currency.
+  modifiers. Funds pay for troops; resources aggregate materials and pay for development.
+  Use one development level per territory and the accepted terrain profiles in SPEC 005.
+  Exact values, level transitions, costs, and terrain-specific double-speed commander
+  development abilities remain proposals. Do not collapse funds and resources into one currency.
 - The first release must run entirely on the device. Use an embedded local DB
   for persistence, with no external server, separate DB process, cloud DB,
   account, or network connection required to play or resume a game.
