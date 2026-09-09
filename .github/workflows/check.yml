@@ -1,7 +1,7 @@
 name: Godot checks
 on:
   push:
-  pull_request:
+    branches: [main]
 permissions:
   contents: read
 jobs:
@@ -10,7 +10,12 @@ jobs:
     timeout-minutes: 10
     steps:
       - uses: actions/checkout@v4
+      - uses: astral-sh/setup-uv@v6
+        with:
+          version: "0.8.4"
+      - name: Install locked development tools
+        run: make tools
       - name: Install pinned Godot with checksum verification
         run: ./scripts/setup.sh
-      - name: Import, test and boot
+      - name: Format check, lint, import, test and boot
         run: ./scripts/check.sh

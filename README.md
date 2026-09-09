@@ -4,16 +4,20 @@
 
 スマホ向けのテキスト・マップ中心の同時ターン戦略ゲーム。現在は開発基盤のみ。ゲーム本体は次のマイルストーンで実装する。
 
+初期版は端末内で完結するローカルゲームとし、DBもローカルDBのみを使用する。外部サーバーやネットワーク接続はプレイに不要。将来のオンラインマルチプレイに備えて保存・通信とゲームルールを分離する。ローカルDBの方式選定と実装は今後行う。
+
 ## 開始
 
 ```sh
-./scripts/setup.sh  # macOS / Linux: 固定版Godotをプロジェクト内に導入
-./scripts/check.sh  # インポート・仕様境界のテスト・起動確認
+make setup  # macOS / Linux: 固定版Godot＋開発ツールを導入
+make check  # format確認・lint・インポート・テスト・起動確認
 ./scripts/godot.sh --editor --path game
 ./scripts/godot.sh --path game
 ```
 
-Windowsは公式アーカイブから4.6.3 Standardを導入し `game/project.godot` を開く。コマンド実行はGit Bashで `GODOT_BIN` に実行ファイルのパスを設定する。
+事前に[uv](https://docs.astral.sh/uv/getting-started/installation/)とmakeを導入する。`make format`で整形、`make lint`で静的チェック。Pythonの開発依存は`pyproject.toml`と`uv.lock`で管理し、ゲーム本体には同梱しない。
+
+Windowsは公式アーカイブから4.6.3 Standardを導入し `game/project.godot` を開く。開発ツールは`uv sync --locked`で導入できる。makeがない場合のコマンド実行はGit Bashで `GODOT_BIN` に実行ファイルのパスを設定する。
 
 ## 構成
 
@@ -33,10 +37,13 @@ Windowsは公式アーカイブから4.6.3 Standardを導入し `game/project.go
 ## 開発資料
 
 - [開発環境](docs/DEVELOPMENT.md)
+- [依存とコマンド管理](docs/DEPENDENCIES.md)
 - [現状とロードマップ](docs/ROADMAP.md)
 - [技術選定](docs/decisions/0001-stack.md)
 - [基盤SPEC](docs/specs/000-foundation.md)
 - [プロトタイプSPEC](docs/specs/001-prototype.md)
 - [素材管理](game/assets/README.md)
 
-コード変更時は関連SPECを更新し、`./scripts/check.sh` を通してPRに検証結果を記載する。外部公開ライセンスは未選定。GitHubへの公開・ストア配布はまだ行わない。
+コード変更時は関連SPECを更新し、`make check` を通す。当面はmainのみで開発し、PRを作らず直接コミット・pushする。外部公開ライセンスは未選定。ストア配布はまだ行わない。
+
+リポジトリ: https://github.com/mitsuru-there2/5-minute-orders

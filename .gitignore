@@ -11,3 +11,7 @@ build/
 *.p12
 *.mobileprovision
 export_credentials.cfg
+
+# Python development tools
+.venv/
+__pycache__/

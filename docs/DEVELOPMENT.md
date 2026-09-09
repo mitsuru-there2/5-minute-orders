@@ -3,10 +3,14 @@
 ## 標準手順
 
 ```sh
-./scripts/setup.sh
-./scripts/check.sh
+make setup
+make check
 ./scripts/godot.sh --editor --path game
 ```
+
+先に[uv](https://docs.astral.sh/uv/getting-started/installation/)とmakeを導入する。このMacのuvは0.8.4、CIも同版を利用する。`make tools` は `uv sync --locked` でPython 3.12環境とロック済み開発依存を準備する。Pythonがなければuvが取得する。
+
+`make format` はGDScriptを書き換え、`make lint` は静的チェック、`make check` は整形確認・lint・既存のGodot検証を実行する。makeなしでも `uv sync --locked` と `./scripts/style.sh format` / `./scripts/check.sh` を使える。
 
 Godot 4.6.3 Standardを公式GitHub Releasesから取得し、SHA512を検証して `.tools/` に展開する。Python 3、curl、unzip、Bashが必要。macOSとLinux x86_64をサポートする。別途導入済みの場合は `GODOT_BIN` に実行ファイルの絶対パスを設定する。
 
@@ -21,7 +25,7 @@ GodotはユーザーのLibrary等に設定・キャッシュを作成するた�
 | Java | 17.0.10あり |
 | Android Studio / SDK | あり。build-tools 36.1.0 / 37.0.0、platform android-36.1 |
 | Godot 4.6向けAndroid SDK一式 | 未完了。下記の固定パッケージとの差分あり |
-| GitHub CLI | mitsuru-there2で認証確認済み。remote未設定 |
+| GitHub CLI | mitsuru-there2で認証確認済み。originは `mitsuru-there2/5-minute-orders` |
 | Export Templates / 署名 / 実機書き出し | 未設定・未検証 |
 
 ## Android実機検証の前に
@@ -42,7 +46,7 @@ macOS＋Xcode＋同版Export Templatesを使用する。Project → ExportでiOS
 
 ## Git運用
 
-初期作業ブランチは `codex-initial-setup`。今後も `codex-` 接頭辞の作業ブランチで変更し、関連SPECを同期する。GitHubの所有者・名前・公開範囲が確定後、リモートを作成してpushする。CIが動いたことを確認してから必須チェックとして保護ルールを設定する。
+当面は個人開発として `main` ブランチのみを使う。作業ブランチとPRは作成しない。関連SPECを同期し、`make check` を通してmainへ直接コミット・pushする。originは `https://github.com/mitsuru-there2/5-minute-orders.git`。CIはmainへのpushで実行する。
 
 コード・素材の公開ライセンスは未選定。外部依存や素材を追加した時点でライセンス台帳も更新する。
 
