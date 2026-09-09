@@ -20,6 +20,10 @@ incomplete information.
   Faction traits, detailed terrain rules, and turn-limit adjudication remain proposals.
   Keep one to three commanders, armies, movement, combat, defense, fog of war,
   and local AI. Two-nation maps may remain as focused rule-test fixtures.
+- Commanders join by meeting conditions known to the player from the start,
+  plus some rare recruitment events. Do not guarantee recruitment at fixed turns.
+  Exact conditions, thresholds, event mechanics, and commander abilities remain
+  proposals in SPEC 004. The first-release commander cap remains three per nation.
 - The first release must run entirely on the device. Use an embedded local DB
   for persistence, with no external server, separate DB process, cloud DB,
   account, or network connection required to play or resume a game.
