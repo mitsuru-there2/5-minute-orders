@@ -18,12 +18,15 @@ incomplete information.
   and preserve land already occupied by surviving nations. One survivor wins;
   simultaneous elimination of all remaining nations is a draw. See SPEC 003 for ordering.
   Faction traits, detailed terrain rules, and turn-limit adjudication remain proposals.
-  Keep one to three commanders, armies, movement, combat, defense, fog of war,
+  Start with one commander; cap the roster at five, except one of the four factions
+  may have six. Recruiting above the cap requires dismissing an existing commander.
+  Keep armies, movement, combat, defense, fog of war,
   and local AI. Two-nation maps may remain as focused rule-test fixtures.
-- Commanders join by meeting conditions known to the player from the start,
-  plus some rare recruitment events. Do not guarantee recruitment at fixed turns.
-  Exact conditions, thresholds, event mechanics, and commander abilities remain
-  proposals in SPEC 004. The first-release commander cap remains three per nation.
+- Neutral-army defeat recruitment is the leading proposal replacing fixed condition
+  events; details remain unaccepted. Rare recruitment events are rolled randomly
+  each turn, without achievement-based triggers. Do not guarantee fixed-turn recruitment.
+  Preserve seeded determinism. Probabilities, dismissal consequences, faction assignment,
+  neutral-army rules, and commander abilities remain proposals in SPEC 004.
 - The first release must run entirely on the device. Use an embedded local DB
   for persistence, with no external server, separate DB process, cloud DB,
   account, or network connection required to play or resume a game.
