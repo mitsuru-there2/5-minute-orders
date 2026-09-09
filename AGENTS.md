@@ -10,9 +10,12 @@ incomplete information.
   Five minutes is a design constraint, not a mandatory prototype countdown.
 - Favor meaningful choices over micromanagement, and rule-changing abilities
   over additional numerical bonuses.
-- The first release has exactly four player slots, four factions, a fixed-size
+- The first release has exactly four player slots, four factions, a fixed 8x8
   orthogonal square grid, and plains/forest/mountain/water terrain effects.
-  Exact dimensions, faction traits, and terrain rules remain proposals in SPEC 003.
+  Water gameplay focuses on river crossings; no navy or naval combat in the first release.
+  Losing a capital eliminates that nation only, not automatically ending the match.
+  Faction traits, detailed terrain/elimination rules, and match victory remain proposals
+  in SPEC 003.
   Keep one to three commanders, armies, movement, combat, defense, fog of war,
   and local AI. Two-nation maps may remain as focused rule-test fixtures.
 - The first release must run entirely on the device. Use an embedded local DB
