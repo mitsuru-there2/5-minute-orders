@@ -25,7 +25,10 @@ incomplete information.
 - Each nation has a leader who remains in its immutable capital and has per-turn actions.
   No relocation or capital changes. The leader is separate from the five/six commander
   slots; start with one leader plus one commander. Faction ability assignments and
-  specific leader actions remain proposals in SPEC 006.
+  detailed leader rules remain proposals in SPEC 006. Leaders have popularity and science;
+  taxation lowers popularity, public support actions raise it, and research raises science.
+  Both parameters grant modifiers; targets, values, and the proposed three-action limit
+  remain undecided. See SPEC 006.
 - Defeating neutral armies recruits the commander only, without accompanying troops.
   Neutral-army behavior, placement, and zero-strength commander rules remain undecided.
   Rare recruitment events are rolled randomly
