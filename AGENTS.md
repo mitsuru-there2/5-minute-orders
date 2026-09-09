@@ -22,6 +22,10 @@ incomplete information.
   may have six. Recruiting above the cap requires dismissing an existing commander.
   Keep armies, movement, combat, defense, fog of war,
   and local AI. Two-nation maps may remain as focused rule-test fixtures.
+- Each nation has a leader who remains in its immutable capital and has per-turn actions.
+  No relocation or capital changes. The leader is separate from the five/six commander
+  slots; start with one leader plus one commander. Faction ability assignments and
+  specific leader actions remain proposals in SPEC 006.
 - Defeating neutral armies recruits the commander only, without accompanying troops.
   Neutral-army behavior, placement, and zero-strength commander rules remain undecided.
   Rare recruitment events are rolled randomly
@@ -32,8 +36,9 @@ incomplete information.
   three stages. Terrain/development effects have three axes: funds, resources, and defense
   modifiers. Funds pay for troops; resources aggregate materials and pay for development.
   Use one development level per territory and the accepted terrain profiles in SPEC 005.
-  Exact values, level transitions, costs, and terrain-specific double-speed commander
-  development abilities remain proposals. Do not collapse funds and resources into one currency.
+  Terrain-specific double-speed commander development is accepted in principle;
+  exact values, level transitions, costs, and ability assignments remain proposals.
+  Do not collapse funds and resources into one currency.
 - The first release must run entirely on the device. Use an embedded local DB
   for persistence, with no external server, separate DB process, cloud DB,
   account, or network connection required to play or resume a game.
