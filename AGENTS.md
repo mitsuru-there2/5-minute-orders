@@ -40,19 +40,17 @@ incomplete information.
 - Garrisons can be recruited directly in owned territories even without a commander.
   Purchases finalize immediately and new units can be used in the same turn.
   Purchases and replacements do not consume commander actions. Garrisons contain
-  infantry only, with capacity 1/2/3/4 for undeveloped land and development stages 1–3.
-  A later decision starts land at level 1 with maximum level 3. Mapping the previous
-  four-column garrison and recruit-count tables to these three levels is pending.
+  infantry only, with capacity 2/3/4 at territory levels 1/2/3. Land starts at level 1.
   Capitals start with no garrison; this does not determine the starting commander's army.
   Commanders level up and their unit capacity grows to at most ten units per commander.
   Max level is five; capacities at levels 1–5 are 5/6/7/8/10. Combat and development
   can support progression; exact experience rules remain proposals in SPEC 004.
   Units have individual names and variable parameters. Each turn presents randomized
   recruit candidates for purchase or replacement. Terrain and development affect
-  candidate counts (few in mountains, more in developed towns). Detailed candidate
-  table values were approved, but level mapping is pending. Capitals guarantee at least
+  candidate counts: at levels 1/2/3, plains have 3/4/5, forests 2/3/4, mountains 0–1/1/2
+  (50% chance of one at mountain level 1), and water has zero. Capitals guarantee at least
   two candidates; every nonempty candidate list includes at least one infantry soldier.
-  counts and pricing remain proposals in SPEC 008. Replaced soldiers are dismissed
+  Candidate pricing remains a proposal in SPEC 008. Replaced soldiers are dismissed
   without a reserve slot or refund. At zero HP soldiers leave with injuries and return
   after resting for two turns, rejoining their original army or garrison. Injured
   soldiers still occupy command slots and may be dismissed to recruit replacements.
@@ -73,7 +71,7 @@ incomplete information.
   Use one development level per territory and the accepted terrain profiles in SPEC 005.
   Land starts at level 1 and develops to maximum level 3. Normal development adds one
   level, terrain specialists up to two, paying the full material cost of levels gained.
-  Occupation lowers development by one; the proposed level-1 floor needs confirmation.
+  Occupation lowers development by one to a minimum of level 1; no level-0 ruin state.
   Exact costs and ability assignments remain proposals.
   Do not collapse funds and resources into one currency.
 - The first release must run entirely on the device. Use an embedded local DB
