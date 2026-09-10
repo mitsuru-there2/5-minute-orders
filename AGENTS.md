@@ -55,10 +55,12 @@ incomplete information.
   after resting for two turns, rejoining their original army or garrison. Injured
   soldiers still occupy command slots and may be dismissed to recruit replacements.
   Commander rest is restricted to owned territory without movement. Garrisons heal
-  automatically on turns without combat. Army rest restores 50% of each survivor's
-  max HP, and garrisons restore 25%. Completed rest is not canceled by the following
-  battle under the new turn timing in SPEC 009.
-  Injury in turn T means absence in T+1 and T+2, returning at full HP for T+3 input.
+  automatically; the old no-combat condition is being reconciled with the new rule:
+  rest fully heals all surviving army units, other actions naturally heal 20% max HP.
+  Natural healing territory restrictions and garrison applicability await confirmation.
+  Armies that fought at turn opening may rest afterward on owned land. Completed
+  healing is not canceled by the next battle. Injury in T means absence in T+1 and
+  T+2, returning at full HP before T+3 combat. See SPEC 009.
   Injured soldiers whose original formation disappears do not return. Rest and automatic
   garrison healing cost no funds. Rounding and precise healing timing remain undecided.
   Rank-based unit comparisons (C/B/A/S/SS) and roughly 100% individual variation
@@ -80,6 +82,7 @@ incomplete information.
   account, or network connection required to play or resume a game.
 - Do not use postgres MCP in this project.
 - Turn timing: finish turn T work and recruitment before combat at the start of T+1.
+  Movement occurs at the end of T; there is no new input between movement and combat.
   Completed development, rest, and leader work are not rolled back by that combat.
   Development materials are fully spent; rejected invalid orders do not spend them.
   Terrain specialists may develop one step if only one step is affordable; show
