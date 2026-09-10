@@ -44,6 +44,9 @@ incomplete information.
   recruit candidates for purchase or replacement. Terrain and development affect
   candidate counts (few in mountains, more in developed towns). Detailed candidate
   counts, pricing, and replaced-unit handling remain proposals in SPEC 008.
+  Rank-based unit comparisons (C/B/A/S/SS) and roughly 100% individual variation
+  are requested; interpreting this as a 1x–2x same-type stat range, rank thresholds,
+  and generation probabilities remain proposals in SPEC 008.
   Unit types, garrison caps, costs, purchase-phase
   restrictions, and recovery of existing units remain proposals in SPEC 007.
 - Commanders can issue a territory-development order. Territories develop by up to
