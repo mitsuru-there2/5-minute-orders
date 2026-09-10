@@ -39,6 +39,9 @@ incomplete information.
   neutral-army rules, and commander abilities remain proposals in SPEC 004.
 - Garrisons can be recruited directly in owned territories even without a commander.
   Purchases finalize immediately and new units can be used in the same turn.
+  Purchases and replacements do not consume commander actions. Garrisons contain
+  infantry only, with capacity 1/2/3/4 for undeveloped land and development stages 1–3.
+  Capitals start with no garrison; this does not determine the starting commander's army.
   Commanders level up and their unit capacity grows to at most ten units per commander.
   Max level is five; capacities at levels 1–5 are 5/6/7/8/10. Combat and development
   can support progression; exact experience rules remain proposals in SPEC 004.
@@ -53,12 +56,12 @@ incomplete information.
   automatically on turns without combat. Army rest restores 50% of each survivor's
   max HP, and garrisons restore 25%. Combat cancels army rest healing for that turn.
   Injury in turn T means absence in T+1 and T+2, returning at full HP for T+3 input.
-  Injured soldiers whose original formation disappears do not return. Recovery costs,
-  rounding, and precise normal-healing timing remain undecided in SPEC 008.
+  Injured soldiers whose original formation disappears do not return. Rest and automatic
+  garrison healing cost no funds. Rounding and precise healing timing remain undecided.
   Rank-based unit comparisons (C/B/A/S/SS) and roughly 100% individual variation
   are requested; interpreting this as a 1x–2x same-type stat range, rank thresholds,
   and generation probabilities remain proposals in SPEC 008.
-  Unit types, garrison caps, costs, purchase-phase
+  Unit types, recruitment costs, purchase-phase
   restrictions, and detailed recovery rules remain proposals in SPEC 007.
 - Commanders can issue a territory-development order. Territories develop by up to
   three stages. Terrain/development effects have three axes: funds, resources, and defense
