@@ -32,7 +32,10 @@ incomplete information.
   attack/defense; popularity targets and exact modifier values remain proposals.
   See SPEC 006.
 - Defeating neutral armies recruits the commander only, without accompanying troops.
-  Neutral-army behavior, placement, and zero-strength commander rules remain undecided.
+  Neutral-army behavior and placement remain undecided. Commanders with no combat-ready
+  soldiers may move, develop, recruit, and occupy territory without enemy armies,
+  including capitals. Encounter and retreat outcomes remain undecided. Normal ownership
+  requirements for development/recruitment still apply; hidden enemies cannot affect validation.
   Rare recruitment events are rolled randomly
   each turn, without achievement-based triggers. Do not guarantee fixed-turn recruitment.
   Preserve seeded determinism. Probabilities, dismissal consequences, faction assignment,
@@ -83,6 +86,9 @@ incomplete information.
 - Do not use postgres MCP in this project.
 - Turn timing: finish turn T work and recruitment before combat at the start of T+1.
   Movement occurs at the end of T; there is no new input between movement and combat.
+  Opposing armies crossing the same edge pass through without fighting en route.
+  Multiple friendly armies may share a tile and cooperate in combat while retaining
+  separate commanders, orders, and unit caps.
   Completed development, rest, and leader work are not rolled back by that combat.
   Development materials are fully spent; rejected invalid orders do not spend them.
   Terrain specialists may develop one step if only one step is affordable; show
