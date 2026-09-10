@@ -37,7 +37,9 @@ incomplete information.
   neutral-army rules, and commander abilities remain proposals in SPEC 004.
 - Garrisons can be recruited directly in owned territories even without a commander.
   Purchases finalize immediately and new units can be used in the same turn.
-  Unit types, the proposed five-unit army cap, garrison caps, costs, purchase-phase
+  Commanders level up and their unit capacity grows to at most ten units per commander.
+  Max level five, capacity per level, and experience rules are proposals in SPEC 004.
+  Unit types, garrison caps, costs, purchase-phase
   restrictions, and recovery of existing units remain proposals in SPEC 007.
 - Commanders can issue a territory-development order. Territories develop by up to
   three stages. Terrain/development effects have three axes: funds, resources, and defense
