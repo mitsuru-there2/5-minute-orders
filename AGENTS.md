@@ -41,6 +41,8 @@ incomplete information.
   Purchases finalize immediately and new units can be used in the same turn.
   Purchases and replacements do not consume commander actions. Garrisons contain
   infantry only, with capacity 1/2/3/4 for undeveloped land and development stages 1–3.
+  A later decision starts land at level 1 with maximum level 3. Mapping the previous
+  four-column garrison and recruit-count tables to these three levels is pending.
   Capitals start with no garrison; this does not determine the starting commander's army.
   Commanders level up and their unit capacity grows to at most ten units per commander.
   Max level is five; capacities at levels 1–5 are 5/6/7/8/10. Combat and development
@@ -48,6 +50,8 @@ incomplete information.
   Units have individual names and variable parameters. Each turn presents randomized
   recruit candidates for purchase or replacement. Terrain and development affect
   candidate counts (few in mountains, more in developed towns). Detailed candidate
+  table values were approved, but level mapping is pending. Capitals guarantee at least
+  two candidates; every nonempty candidate list includes at least one infantry soldier.
   counts and pricing remain proposals in SPEC 008. Replaced soldiers are dismissed
   without a reserve slot or refund. At zero HP soldiers leave with injuries and return
   after resting for two turns, rejoining their original army or garrison. Injured
@@ -67,8 +71,10 @@ incomplete information.
   three stages. Terrain/development effects have three axes: funds, resources, and defense
   modifiers. Funds pay for troops; resources aggregate materials and pay for development.
   Use one development level per territory and the accepted terrain profiles in SPEC 005.
-  Terrain-specific double-speed commander development is accepted in principle;
-  exact values, level transitions, costs, and ability assignments remain proposals.
+  Land starts at level 1 and develops to maximum level 3. Normal development adds one
+  level, terrain specialists up to two, paying the full material cost of levels gained.
+  Occupation lowers development by one; the proposed level-1 floor needs confirmation.
+  Exact costs and ability assignments remain proposals.
   Do not collapse funds and resources into one currency.
 - The first release must run entirely on the device. Use an embedded local DB
   for persistence, with no external server, separate DB process, cloud DB,
