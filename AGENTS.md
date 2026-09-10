@@ -56,7 +56,8 @@ incomplete information.
   soldiers still occupy command slots and may be dismissed to recruit replacements.
   Commander rest is restricted to owned territory without movement. Garrisons heal
   automatically on turns without combat. Army rest restores 50% of each survivor's
-  max HP, and garrisons restore 25%. Combat cancels army rest healing for that turn.
+  max HP, and garrisons restore 25%. Completed rest is not canceled by the following
+  battle under the new turn timing in SPEC 009.
   Injury in turn T means absence in T+1 and T+2, returning at full HP for T+3 input.
   Injured soldiers whose original formation disappears do not return. Rest and automatic
   garrison healing cost no funds. Rounding and precise healing timing remain undecided.
@@ -78,6 +79,13 @@ incomplete information.
   for persistence, with no external server, separate DB process, cloud DB,
   account, or network connection required to play or resume a game.
 - Do not use postgres MCP in this project.
+- Turn timing: finish turn T work and recruitment before combat at the start of T+1.
+  Completed development, rest, and leader work are not rolled back by that combat.
+  Development materials are fully spent; rejected invalid orders do not spend them.
+  Terrain specialists may develop one step if only one step is affordable; show
+  the resulting level and cost before confirmation. Rivers are tile edges;
+  sea/lake tiles cannot be entered, occupied, or developed. Exact movement, recovery,
+  and income boundaries remain proposals in SPEC 009. Gameplay is not implemented.
 - Online multiplayer is a future goal. Preserve suitable architectural
   boundaries, but do not implement networking, matchmaking, notifications,
   monetization, or server infrastructure as part of the initial prototype.
