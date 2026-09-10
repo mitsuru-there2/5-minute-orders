@@ -47,13 +47,16 @@ incomplete information.
   candidate counts (few in mountains, more in developed towns). Detailed candidate
   counts and pricing remain proposals in SPEC 008. Replaced soldiers are dismissed
   without a reserve slot or refund. At zero HP soldiers leave with injuries and return
-  after a delay. A commander rest order heals surviving soldiers in the army.
-  Injury slots, return details, healing amounts, and garrison healing are undecided.
+  after resting for two turns, rejoining their original army or garrison. Injured
+  soldiers still occupy command slots and may be dismissed to recruit replacements.
+  Commander rest is restricted to owned territory without movement. Garrisons heal
+  automatically on turns without combat. Healing amounts, exact return timing, and
+  handling a missing original formation remain undecided.
   Rank-based unit comparisons (C/B/A/S/SS) and roughly 100% individual variation
   are requested; interpreting this as a 1x–2x same-type stat range, rank thresholds,
   and generation probabilities remain proposals in SPEC 008.
   Unit types, garrison caps, costs, purchase-phase
-  restrictions, and recovery of existing units remain proposals in SPEC 007.
+  restrictions, and detailed recovery rules remain proposals in SPEC 007.
 - Commanders can issue a territory-development order. Territories develop by up to
   three stages. Terrain/development effects have three axes: funds, resources, and defense
   modifiers. Funds pay for troops; resources aggregate materials and pay for development.
