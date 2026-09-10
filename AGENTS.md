@@ -91,8 +91,11 @@ incomplete information.
   separate commanders, orders, and unit caps.
   Defeated armies retreat to an eligible adjacent owned tile. If none exists, only
   the commander returns to the capital after wandering for two turns, without troops.
-  Exact return timing, roster occupancy, and retained progression are pending in
-  SPEC 004. Elimination cancels any return. Combat uses no randomness; recruitment
+  Wandering commanders occupy roster slots and may be dismissed, canceling their return.
+  Wandering in T means return before T+3 combat with level, experience, and ability intact.
+  Retreat automatically selects an eligible adjacent owned tile closest to the capital;
+  distance metric and ties remain proposals in SPEC 004. Elimination cancels any return.
+  Combat uses no randomness; recruitment
   candidates and events still use deterministic seeded randomness.
   Completed development, rest, and leader work are not rolled back by that combat.
   Development materials are fully spent; rejected invalid orders do not spend them.
