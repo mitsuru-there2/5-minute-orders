@@ -50,8 +50,11 @@ incomplete information.
   after resting for two turns, rejoining their original army or garrison. Injured
   soldiers still occupy command slots and may be dismissed to recruit replacements.
   Commander rest is restricted to owned territory without movement. Garrisons heal
-  automatically on turns without combat. Healing amounts, exact return timing, and
-  handling a missing original formation remain undecided.
+  automatically on turns without combat. Army rest restores 50% of each survivor's
+  max HP, and garrisons restore 25%. Combat cancels army rest healing for that turn.
+  Injury in turn T means absence in T+1 and T+2, returning at full HP for T+3 input.
+  Injured soldiers whose original formation disappears do not return. Recovery costs,
+  rounding, and precise normal-healing timing remain undecided in SPEC 008.
   Rank-based unit comparisons (C/B/A/S/SS) and roughly 100% individual variation
   are requested; interpreting this as a 1x–2x same-type stat range, rank thresholds,
   and generation probabilities remain proposals in SPEC 008.
