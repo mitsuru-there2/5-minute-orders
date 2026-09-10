@@ -38,7 +38,12 @@ incomplete information.
 - Garrisons can be recruited directly in owned territories even without a commander.
   Purchases finalize immediately and new units can be used in the same turn.
   Commanders level up and their unit capacity grows to at most ten units per commander.
-  Max level five, capacity per level, and experience rules are proposals in SPEC 004.
+  Max level is five; capacities at levels 1–5 are 5/6/7/8/10. Combat and development
+  can support progression; exact experience rules remain proposals in SPEC 004.
+  Units have individual names and variable parameters. Each turn presents randomized
+  recruit candidates for purchase or replacement. Terrain and development affect
+  candidate counts (few in mountains, more in developed towns). Detailed candidate
+  counts, pricing, and replaced-unit handling remain proposals in SPEC 008.
   Unit types, garrison caps, costs, purchase-phase
   restrictions, and recovery of existing units remain proposals in SPEC 007.
 - Commanders can issue a territory-development order. Territories develop by up to
