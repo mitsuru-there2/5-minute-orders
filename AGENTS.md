@@ -55,9 +55,9 @@ incomplete information.
   after resting for two turns, rejoining their original army or garrison. Injured
   soldiers still occupy command slots and may be dismissed to recruit replacements.
   Commander rest is restricted to owned territory without movement. Garrisons heal
-  automatically; the old no-combat condition is being reconciled with the new rule:
-  rest fully heals all surviving army units, other actions naturally heal 20% max HP.
-  Natural healing territory restrictions and garrison applicability await confirmation.
+  automatically by 20% max HP each turn even if they fought. Rest fully heals surviving
+  army units. Otherwise armies naturally heal 20% max HP only when on owned territory
+  after turn-end movement; pending enemy/neutral territory occupation does not qualify.
   Armies that fought at turn opening may rest afterward on owned land. Completed
   healing is not canceled by the next battle. Injury in T means absence in T+1 and
   T+2, returning at full HP before T+3 combat. See SPEC 009.
