@@ -27,8 +27,10 @@ incomplete information.
   slots; start with one leader plus one commander. Faction ability assignments and
   detailed leader rules remain proposals in SPEC 006. Leaders have popularity and science;
   taxation lowers popularity, public support actions raise it, and research raises science.
-  Both parameters grant modifiers; targets, values, and the proposed three-action limit
-  remain undecided. See SPEC 006.
+  Choose exactly one of taxation, research, or public support per turn. Commanders
+  handle capital development. Science modifies material production and military
+  attack/defense; popularity targets and exact modifier values remain proposals.
+  See SPEC 006.
 - Defeating neutral armies recruits the commander only, without accompanying troops.
   Neutral-army behavior, placement, and zero-strength commander rules remain undecided.
   Rare recruitment events are rolled randomly
@@ -43,7 +45,10 @@ incomplete information.
   Units have individual names and variable parameters. Each turn presents randomized
   recruit candidates for purchase or replacement. Terrain and development affect
   candidate counts (few in mountains, more in developed towns). Detailed candidate
-  counts, pricing, and replaced-unit handling remain proposals in SPEC 008.
+  counts and pricing remain proposals in SPEC 008. Replaced soldiers are dismissed
+  without a reserve slot or refund. At zero HP soldiers leave with injuries and return
+  after a delay. A commander rest order heals surviving soldiers in the army.
+  Injury slots, return details, healing amounts, and garrison healing are undecided.
   Rank-based unit comparisons (C/B/A/S/SS) and roughly 100% individual variation
   are requested; interpreting this as a 1x–2x same-type stat range, rank thresholds,
   and generation probabilities remain proposals in SPEC 008.
