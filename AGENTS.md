@@ -89,6 +89,11 @@ incomplete information.
   Opposing armies crossing the same edge pass through without fighting en route.
   Multiple friendly armies may share a tile and cooperate in combat while retaining
   separate commanders, orders, and unit caps.
+  Defeated armies retreat to an eligible adjacent owned tile. If none exists, only
+  the commander returns to the capital after wandering for two turns, without troops.
+  Exact return timing, roster occupancy, and retained progression are pending in
+  SPEC 004. Elimination cancels any return. Combat uses no randomness; recruitment
+  candidates and events still use deterministic seeded randomness.
   Completed development, rest, and leader work are not rolled back by that combat.
   Development materials are fully spent; rejected invalid orders do not spend them.
   Terrain specialists may develop one step if only one step is affordable; show
