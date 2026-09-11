@@ -94,6 +94,12 @@ incomplete information.
   Wandering commanders occupy roster slots and may be dismissed, canceling their return.
   Wandering in T means return before T+3 combat with level, experience, and ability intact.
   Retreat automatically selects an eligible adjacent owned tile closest to the capital;
+  eligible tiles must remain owned and free of enemy armies after all battles.
+  Retreat does not trigger another battle. Terrain and capital locations are public;
+  territory ownership updates only within vision. Ordinary enemy observation shows
+  commander presence and approximate troop counts; scouting reveals detailed composition
+  and abilities. Commanders, garrisons, and capitals reveal their tile and orthogonal
+  neighbors. Self-territory loss notifications and precise scouting rules remain undecided.
   distance metric and ties remain proposals in SPEC 004. Elimination cancels any return.
   Combat uses no randomness; recruitment
   candidates and events still use deterministic seeded randomness.
