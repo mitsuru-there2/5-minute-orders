@@ -2,6 +2,15 @@
 
 ## Product and scope
 
+Latest acceptance (2026-09-11): `docs/specs/010-remaining-decisions.md` adopts R01–R16
+as provisional rules and R17–R21 as initial tuning values and methods. R22–R24 retain
+their later-stage final decisions. It overrides older proposal/pending labels below
+and in SPECs 002–009 on the same subjects; unrelated accepted rules remain intact.
+Do not re-ask accepted choices individually. Complete missing formulas, numeric tables,
+and map layouts with worked examples before implementing the affected rules. Tune through
+playtesting and record rule versions and evidence; ask about changes to core gameplay.
+Gameplay remains unimplemented and playtesting has not yet occurred.
+
 5分戦記 / 5 MINUTE ORDERS is a mobile-first, text-and-map strategy game about
 predicting an opponent's intentions and issuing simultaneous orders under
 incomplete information.
