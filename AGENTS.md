@@ -60,6 +60,8 @@ incomplete information.
   Commanders level up and their unit capacity grows to at most ten units per commander.
   Max level is five; capacities at levels 1–5 are 5/6/7/8/10. Combat and development
   can support progression; exact experience rules remain proposals in SPEC 004.
+  Each commander has one ability fixed upon joining; leveling never adds abilities.
+  The assignment method remains undecided.
   Units have individual names and variable parameters. Each turn presents randomized
   recruit candidates for purchase or replacement. Terrain and development affect
   candidate counts: at levels 1/2/3, plains have 3/4/5, forests 2/3/4, mountains 0–1/1/2
@@ -127,8 +129,10 @@ incomplete information.
   Development materials are fully spent; rejected invalid orders do not spend them.
   Terrain specialists may develop one step if only one step is affordable; show
   the resulting level and cost before confirmation. Rivers are tile edges;
-  sea/lake tiles cannot be entered, occupied, or developed. Exact movement, recovery,
-  and income boundaries remain proposals in SPEC 009. Gameplay is not implemented.
+  sea/lake tiles cannot be entered, occupied, or developed.
+  River faction crossing applies to retreats as well as advances. Bridges and ordinary
+  crossings are fixed at map generation, without in-match construction or destruction.
+  Remaining timing details and income boundaries are proposals in SPEC 009. Gameplay is not implemented.
 - Online multiplayer is a future goal. Preserve suitable architectural
   boundaries, but do not implement networking, matchmaking, notifications,
   monetization, or server infrastructure as part of the initial prototype.
