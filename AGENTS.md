@@ -36,8 +36,11 @@ incomplete information.
   handle capital development. Popularity modifies normal fund income only. Science
   levels 0–3 add 20% material production and 10% attack/defense per level, reaching
   +60%/+30% at level 3 without repeated compounding. Research grants one point per
-  action; cumulative thresholds are 2/5/9. Popularity values, science stacking with
-  other effects, and science applicability to garrisons remain proposals.
+  action; cumulative thresholds are 2/5/9. Popularity is 0–100, starts at 50, taxation
+  costs 15 popularity (requires at least 15), and public support adds 20 capped at 100.
+  Normal fund-income modifiers are -10%/0%/+10%/+20% at popularity 0–24/25–49/50–74/75–100.
+  Research/public support cost only the leader action. Science attack/defense modifiers
+  apply to both armies and garrisons. Stacking with other effects remains a proposal.
   See SPEC 006.
 - Defeating neutral armies recruits the commander only, without accompanying troops.
   Neutral-army behavior and placement remain undecided. Commanders with no combat-ready
