@@ -44,7 +44,10 @@ incomplete information.
   apply to both armies and garrisons. Stacking with other effects remains a proposal.
   See SPEC 006.
 - Defeating neutral armies recruits the commander only, without accompanying troops.
-  Neutral-army behavior and placement remain undecided. Commanders with no combat-ready
+  Neutral armies remain on their initial tiles, defend without roaming or invading,
+  and never respawn. Their number, locations, and strength remain undecided.
+  Recruited neutral commanders join without soldiers on the defeated army's tile,
+  not at the capital. Commanders with no combat-ready
   soldiers may move, develop, recruit, and occupy territory without enemy armies,
   including capitals. Encounter and retreat outcomes remain undecided. Normal ownership
   requirements for development/recruitment still apply; hidden enemies cannot affect validation.
@@ -60,8 +63,8 @@ incomplete information.
   Commanders level up and their unit capacity grows to at most ten units per commander.
   Max level is five; capacities at levels 1–5 are 5/6/7/8/10. Combat and development
   can support progression; exact experience rules remain proposals in SPEC 004.
-  Each commander has one ability fixed upon joining; leveling never adds abilities.
-  The assignment method remains undecided.
+  Each commander has one ability fixed when the candidate appears and shown before
+  recruitment is accepted; players cannot choose or reroll it. Leveling never adds abilities.
   Units have individual names and variable parameters. Each turn presents randomized
   recruit candidates for purchase or replacement. Terrain and development affect
   candidate counts: at levels 1/2/3, plains have 3/4/5, forests 2/3/4, mountains 0–1/1/2
