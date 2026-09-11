@@ -17,7 +17,12 @@ incomplete information.
   Remove eliminated nations' commanders and armies, neutralize their remaining land,
   and preserve land already occupied by surviving nations. One survivor wins;
   simultaneous elimination of all remaining nations is a draw. See SPEC 003 for ordering.
-  Faction traits, detailed terrain rules, and turn-limit adjudication remain proposals.
+  The match allows 30 order turns; resolve the last orders' combat before adjudication,
+  without a 31st input phase. Capital elimination and one/zero-survivor results take
+  priority. Otherwise the surviving nation with the highest sum of owned territory
+  development levels wins; a tie for highest is a draw. Apply final occupation level
+  reductions before scoring. Eliminated humans see defeat and may choose AI spectating.
+  Spectator visibility and controls remain proposals, as do detailed faction/terrain rules.
   Start with one commander; cap the roster at five, except one of the four factions
   may have six. Recruiting above the cap requires dismissing an existing commander.
   Keep armies, movement, combat, defense, fog of war,
