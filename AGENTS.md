@@ -99,7 +99,12 @@ incomplete information.
   territory ownership updates only within vision. Ordinary enemy observation shows
   commander presence and approximate troop counts; scouting reveals detailed composition
   and abilities. Commanders, garrisons, and capitals reveal their tile and orthogonal
-  neighbors. Self-territory loss notifications and precise scouting rules remain undecided.
+  neighbors. All owned tiles are always visible, without automatically revealing their
+  neighbors. Commanders/garrisons on mountains see Manhattan radius 2. Enemy troop
+  counts use qualitative size labels; thresholds remain undecided. Scouting targets
+  one tile within Manhattan distance 3 and reveals detailed composition and abilities.
+  Ownership loss must not remain displayed as current ownership; enemy details in
+  loss logs and scouting observation timing remain undecided.
   distance metric and ties remain proposals in SPEC 004. Elimination cancels any return.
   Combat uses no randomness; recruitment
   candidates and events still use deterministic seeded randomness.
