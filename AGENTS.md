@@ -33,8 +33,11 @@ incomplete information.
   detailed leader rules remain proposals in SPEC 006. Leaders have popularity and science;
   taxation lowers popularity, public support actions raise it, and research raises science.
   Choose exactly one of taxation, research, or public support per turn. Commanders
-  handle capital development. Science modifies material production and military
-  attack/defense; popularity targets and exact modifier values remain proposals.
+  handle capital development. Popularity modifies normal fund income only. Science
+  levels 0–3 add 20% material production and 10% attack/defense per level, reaching
+  +60%/+30% at level 3 without repeated compounding. Research grants one point per
+  action; cumulative thresholds are 2/5/9. Popularity values, science stacking with
+  other effects, and science applicability to garrisons remain proposals.
   See SPEC 006.
 - Defeating neutral armies recruits the commander only, without accompanying troops.
   Neutral-army behavior and placement remain undecided. Commanders with no combat-ready
