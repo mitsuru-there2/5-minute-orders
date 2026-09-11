@@ -12,6 +12,7 @@ incomplete information.
   over additional numerical bonuses.
 - The first release has exactly four player slots, four factions, a fixed 8x8
   orthogonal square grid, and plains/forest/mountain/water terrain effects.
+  Each faction appears once: one human-selected faction and three remaining AI factions.
   Water gameplay focuses on river crossings; no navy or naval combat in the first release.
   Losing a capital eliminates that nation only, not automatically ending the match.
   Remove eliminated nations' commanders and armies, neutralize their remaining land,
@@ -72,6 +73,9 @@ incomplete information.
   automatically by 20% max HP each turn even if they fought. Rest fully heals surviving
   army units. Otherwise armies naturally heal 20% max HP only when on owned territory
   after turn-end movement; pending enemy/neutral territory occupation does not qualify.
+  Wind faction armies are an exception: they also heal 20% on enemy/neutral land,
+  without double healing on owned land. Only a commander with precise scouting
+  can reveal the forest faction's concealed troop counts; ordinary scouting cannot.
   Armies that fought at turn opening may rest afterward on owned land. Completed
   healing is not canceled by the next battle. Injury in T means absence in T+1 and
   T+2, returning at full HP before T+3 combat. See SPEC 009.
